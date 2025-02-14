@@ -1,8 +1,8 @@
 """
-CP1404 2025 TR1 Week_2
+CP1404 2025 TR1 Week_1
 Program 1 : Menu
 Student Name: Abid Hasan
-Date started: 14/02/2025
+Date started: 05/02/2025
 """
 name= input("Enter your name: ")
 print("(H)ello")
