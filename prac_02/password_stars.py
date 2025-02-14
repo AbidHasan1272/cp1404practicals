@@ -1,4 +1,8 @@
-"""Abid Hasan
+"""
+CP1404 2025 TR1 Week_2
+Program 1 : Password Stars
+Student Name: Abid Hasan
+Date started: 14/02/2025
 """
 MIN= 10
 def main():

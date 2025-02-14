@@ -1,3 +1,9 @@
+"""
+CP1404 2025 TR1 Week_2
+Program 1 : Score Menu
+Student Name: Abid Hasan
+Date started: 10/02/2025
+"""
 def main():
     """Display menu and handle user choice for temperature conversion."""
     score = get_valid_score()

@@ -1,6 +1,8 @@
 """
-CP1404/CP5632 - Practical
-Program to determine score status
+CP1404 2025 TR1 Week_2
+Program 1 : Score
+Student Name: Abid Hasan
+Date started: 10/02/2025
 """
 import random
 def main():

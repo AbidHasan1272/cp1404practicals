@@ -1,6 +1,8 @@
 """
-CP1404/CP5632 - Practical
-Code for temperature conversion
+CP1404 2025 TR1 Week_2
+Program 1 : Temperature conversion
+Student Name: Abid Hasan
+Date started: 14/02/2025
 """
 def main():
     """Display menu and handle user choice for temperature conversion."""
