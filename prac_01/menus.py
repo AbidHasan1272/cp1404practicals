@@ -1,5 +1,3 @@
-from queue import PriorityQueue
-
 name= input("Enter your name: ")
 print("(H)ello")
 print("(G)oodbye")
