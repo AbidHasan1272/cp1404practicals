@@ -9,7 +9,7 @@ Replace each `...` with your meaningful answer.
 
 ## What time, location and duration have you scheduled to watch lecture videos?
 
-Monday & thursday evening atleast 2 hours each day.
+Monday and thursday evening atleast 2 hours each day.
 
 ## What are you doing well in the subject so far that you will keep doing?
 
