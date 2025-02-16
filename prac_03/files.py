@@ -2,8 +2,7 @@
 Program:Appropriate choice of file-reading technique
 Student Name:Abid Hasan
 Date:16/02/2025
-
- """
+"""
 # 1.
 
 out_file = open("name.txt", "w")
