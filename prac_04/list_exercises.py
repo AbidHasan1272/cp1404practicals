@@ -1,3 +1,9 @@
+"""
+CP1404/CP5632 Practical
+Program: List Exercises
+Student Name:Abid Hasan
+Date:22/02/2025
+"""
 numbers =[]
 NUMBER_COUNT=5
 for i in range(NUMBER_COUNT):

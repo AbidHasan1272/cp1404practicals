@@ -1,3 +1,9 @@
+"""
+CP1404/CP5632 Practical
+Program: Lists warmup
+Student Name:Abid Hasan
+Date:22/02/2025
+"""
 numbers = [3, 1, 4, 1, 5, 9, 2]
 
 # numbers[0]=3

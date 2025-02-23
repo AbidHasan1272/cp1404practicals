@@ -1,3 +1,9 @@
+"""
+CP1404/CP5632 Practical
+Program:Quick picks Random Numbers
+Student Name:Abid Hasan
+Date:22/02/2025
+"""
 import random
 
 MAX_NUMBER=99

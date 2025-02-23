@@ -1,6 +1,9 @@
 """
 CP1404/CP5632 Practical
-Starter code for cumulative total income program
+Program: Total income program
+Student Name:Abid Hasan
+Date:22/02/2025
+
 """
 def main():
     """Display income report for incomes over a given number of months."""

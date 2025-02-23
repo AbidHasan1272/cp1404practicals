@@ -1,6 +1,8 @@
 """
 CP1404/CP5632 Practical
-List comprehensions
+Program: List comprehensions
+Student Name:Abid Hasan
+Date:22/02/2025
 """
 
 names = ["Bob", "Angel", "Jimi", "Alan", "Ada"]
