@@ -1,5 +1,6 @@
 """
-Emails
+CP1404/CP5632 Practical - Suggested Solution
+Program: Emails
 Estimate: 15 minutes
 Actual:   30 minutes
 """
