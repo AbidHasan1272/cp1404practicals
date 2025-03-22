@@ -2,6 +2,7 @@
 CP1404/CP5632 Practical
 File and class example - opens/reads a file, stores in objects of custom class
 (contains multiple versions for demonstration: using csv and namedtuple)
+Abid Hasan
 """
 
 import csv
@@ -23,13 +24,14 @@ def main():
         # print(repr(line))  # debugging
         # Strip newline from end and split it into parts (CSV)
         parts = line.strip().split(',')
-        # print(parts)  # debugging
-        # Reflection is stored as a string (Yes/No) and we want a Boolean
+        name = parts[0]
+        typing = parts[1]
         reflection = parts[2] == "Yes"
+        # Reflection is stored as a string (Yes/No) and we want a Boolean
+        year = int(parts[3])
+        pointer_arithmetic = parts[4] == "Yes"
         # Construct a ProgrammingLanguage object using the elements
-        # year should be an int
-        language = ProgrammingLanguage(parts[0], parts[1], reflection, int(parts[3]))
-        # Add the language we've just constructed to the list
+        language = ProgrammingLanguage(name, typing, reflection, year, pointer_arithmetic)
         languages.append(language)
     # Close the file as soon as we've finished reading it
     in_file.close()
