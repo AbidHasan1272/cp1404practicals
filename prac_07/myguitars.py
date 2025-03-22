@@ -6,25 +6,19 @@ Read, sort, update and save guitar data
 from guitar import Guitar
 
 FILENAME = "guitar.csv"
-
 def main():
     """Main function to manage guitars."""
     guitars = load_guitars(FILENAME)
     print("These are my guitars:")
     display_guitars(guitars)
-
     add_new_guitars(guitars)
-
-    # Sort by year and display again
-    guitars.sort()
+    guitars.sort() # Sort by year and display again
     print("\nThese are my guitars (sorted by year):")
     display_guitars(guitars)
-
-    # Save updated guitars back to file
-    save_guitars(FILENAME, guitars)
+    save_guitars(FILENAME, guitars)     # Save updated guitars back to file
 
 def load_guitars(filename):
-    """Load guitars from a CSV file into a list of Guitar objects."""
+    """Load guitars from a CSV file into a list."""
     guitars = []
     with open(filename, 'r') as in_file:
         for line in in_file:
@@ -42,7 +36,7 @@ def display_guitars(guitars):
         print(f"Guitar {i}: {guitar.name:>30} ({guitar.year}), worth ${guitar.cost:12,.2f}{vintage}")
 
 def add_new_guitars(guitars):
-    """Prompt user to add new guitars."""
+    """Prompt user to add guitars."""
     print("\nAdd new guitars (press Enter to stop):")
     name = input("Name: ")
     while name != "":
