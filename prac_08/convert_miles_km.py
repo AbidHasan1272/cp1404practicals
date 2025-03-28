@@ -1,36 +1,43 @@
+
 from kivy.app import App
 from kivy.lang import Builder
-from kivy.properties import StringProperty
-from kivy.core.window import Window
 
-Window.size = (1000, 600)
+MILES_TO_KM = 1.60934
 
 
-class MilesToKmApp(App):
-    output_text = StringProperty()
-
+class MilesConverterApp(App):
+    """ MilesConverterApp is a Kivy App for converting miles to kilometres """
     def build(self):
+        """ build the Kivy app from the kv file """
         self.title = "Convert Miles to Kilometres"
-        self.output_text = "0.0"
         self.root = Builder.load_file('convert_miles_km.kv')
         return self.root
 
-    def handle_convert(self, value):
+    def handle_calculate(self):
+        """ handle calculation (could be button press or other call), output result to label widget """
+        value = self.get_validated_miles()
+        result = value * MILES_TO_KM
+        self.root.ids.output_label.text = str(result)
+
+    def handle_increment(self, change):
+        """
+        handle up/down button press, update the text input with new value, call calculation function
+        :param change: the amount to change
+        """
+        value = self.get_validated_miles() + change
+        self.root.ids.input_miles.text = str(value)
+        self.handle_calculate()
+
+    def get_validated_miles(self):
+        """
+        get text input from text entry widget, convert to float
+        :return: 0 if error, float version of text if valid
+        """
         try:
-            miles = float(value)
-            km = miles * 1.60934
-            self.output_text = f"{km:.5f}"
+            value = float(self.root.ids.input_miles.text)
+            return value
         except ValueError:
-            self.output_text = "Invalid input"
-
-    def handle_increment(self, value, change):
-        try:
-            miles = float(value) + change
-            self.root.ids.input_miles.text = str(miles)
-            self.handle_convert(miles)
-        except ValueError:
-            self.root.ids.input_miles.text = "0"
-            self.output_text = "0.0"
+            return 0
 
 
-MilesToKmApp().run()
+MilesConverterApp().run()
